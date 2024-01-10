@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Mensaje = (children, tipo) => {
+const Mensaje = ({children, tipo}) => {
   return (
-    <div>Mensaje</div>
+    <div className={`alerta ${tipo}`}>{children}</div>
   )
 }
 

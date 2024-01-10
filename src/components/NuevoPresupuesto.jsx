@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Mensaje from './Mensaje'
 
 
 const NuevoPresupuesto = ({presupuesto, setPresupuesto}) => {
@@ -8,9 +9,10 @@ const NuevoPresupuesto = ({presupuesto, setPresupuesto}) => {
     e.preventDefault()
 
     if(!Number(presupuesto) || Number(presupuesto) < 0) {
-
+      setMensaje('No es un Presupuesto Válido');
     } else {
-
+      console.log('Si es Válido');
+      
     }
     
   }
@@ -32,7 +34,7 @@ const NuevoPresupuesto = ({presupuesto, setPresupuesto}) => {
 
         <input type="submit" value="Añadir" />
 
-        {mensaje}
+        {mensaje && <Mensaje tipo="error">{mensaje}</Mensaje>}
       </form>
     </div>
   );
