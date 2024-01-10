@@ -2,8 +2,8 @@ import React from 'react'
 
 const NuevoPresupuesto = () => {
   return (
-    <div>
-      <h2>NuevoPresupuesto</h2>
+    <div className="contenedor-presupuesto contenedor sombra">
+      <h2>Nuevo Presupuesto</h2>
     </div>
   );
 }

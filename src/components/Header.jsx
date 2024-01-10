@@ -1,5 +1,6 @@
 import React from 'react'
-import NuevoPresupuesto from './components/NuevoPresupuesto'
+import NuevoPresupuesto from './NuevoPresupuesto'
+
 const Header = () => {
   return (
     <header>
