@@ -1,14 +1,13 @@
 import React from 'react'
 
-const NuevoPresupuesto = () => {
+const NuevoPresupuesto = ({ presupuesto, setPresupuesto }) => {
   return (
     <div className="contenedor-presupuesto contenedor sombra">
-      
       <form className="formulario">
         <div className="campo">
           <label>Definir Presupuesto</label>
 
-          <input 
+          <input
             className="nuevo-presupuesto"
             type="text"
             placeholder="Ingresa tu Presupuesto"
@@ -19,6 +18,6 @@ const NuevoPresupuesto = () => {
       </form>
     </div>
   );
-}
+};
 
 export default NuevoPresupuesto
