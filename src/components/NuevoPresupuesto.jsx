@@ -1,9 +1,13 @@
 import React from 'react'
 
 const NuevoPresupuesto = ({presupuesto, setPresupuesto}) => {
+  const HandleSubmit = () => {
+
+  }
+
   return (
     <div className="contenedor-presupuesto contenedor sombra">
-      <form className="formulario">
+      <form onSubmit={HandleSubmit} className="formulario">
         <div className="campo">
           <label>Definir Presupuesto</label>
 
