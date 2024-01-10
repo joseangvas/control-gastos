@@ -11,10 +11,10 @@ function App() {
         presupuesto={presupuesto}
         setPresupuesto={setPresupuesto}
         isValidPresupuesto={setIsValidPresupuesto}
+        setIsValidPresupuesto={setIsValidPresupuesto}
       />
-
     </div>
-  )
+  );
 }
 
 export default App
