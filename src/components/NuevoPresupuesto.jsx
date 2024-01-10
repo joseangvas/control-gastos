@@ -12,9 +12,6 @@ const NuevoPresupuesto = () => {
             className="nuevo-presupuesto"
             type="text"
             placeholder="Ingresa tu Presupuesto"
-
-
-
           />
         </div>
 
