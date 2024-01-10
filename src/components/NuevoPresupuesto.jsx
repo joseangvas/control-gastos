@@ -6,7 +6,13 @@ const NuevoPresupuesto = () => {
       
       <form className="formulario">
         <div className="campo">
-          <label></label>
+          <label>Definir Presupuesto</label>
+
+          <input 
+            
+
+
+          />
         </div>
 
       </form>
