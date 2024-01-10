@@ -4,8 +4,11 @@ const NuevoPresupuesto = () => {
   return (
     <div className="contenedor-presupuesto contenedor sombra">
       
-      <form>
-        
+      <form className="formulario">
+        <div className="campo">
+          <label></label>
+        </div>
+
       </form>
     </div>
   );
