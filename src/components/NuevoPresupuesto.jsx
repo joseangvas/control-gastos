@@ -2,21 +2,24 @@ import {useState} from 'react'
 import Mensaje from './Mensaje'
 
 
-const NuevoPresupuesto = ({presupuesto, setPresupuesto}) => {
-  const [mensaje, setMensaje] = useState('');
+const NuevoPresupuesto = ({
+  presupuesto,
+  setPresupuesto,
+  setIsValidPresupuesto
+}) => {
+  const [mensaje, setMensaje] = useState("");
 
   const HandlePresupuesto = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    if(!presupuesto || presupuesto < 0) {
-      setMensaje('No es un Presupuesto Válido');
+    if (!presupuesto || presupuesto < 0) {
+      setMensaje("No es un Presupuesto Válido");
 
       return;
     }
-    setMensaje('')
-    
-
-  }
+    setMensaje("");
+    setIsValidPresupuesto=(true);
+  };
 
   return (
     <div className="contenedor-presupuesto contenedor sombra">

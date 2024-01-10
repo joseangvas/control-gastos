@@ -3,13 +3,14 @@ import Header from './components/Header'
 
 function App() {
   const [presupuesto, setPresupuesto] = useState(0);
-  const [isValidPresupuesto, setIsValidPresupuesto];
+  const [isValidPresupuesto, setIsValidPresupuesto] = useState(false);
   
   return (
     <div>
       <Header
         presupuesto={presupuesto}
         setPresupuesto={setPresupuesto}
+        isValidPresupuesto={setIsValidPresupuesto}
       />
 
     </div>
