@@ -9,12 +9,16 @@ const NuevoPresupuesto = () => {
           <label>Definir Presupuesto</label>
 
           <input 
-            
+            className="nuevo-presupuesto"
+            type="text"
+            placeholder="Ingresa tu Presupuesto"
+
 
 
           />
         </div>
 
+        <input type="submit" value="Añadir" />
       </form>
     </div>
   );
