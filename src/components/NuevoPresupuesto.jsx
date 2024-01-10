@@ -11,7 +11,8 @@ const NuevoPresupuesto = ({presupuesto, setPresupuesto}) => {
             className="nuevo-presupuesto"
             type="text"
             placeholder="Ingresa tu Presupuesto"
-            value="{presupuesto}"
+            value={presupuesto}
+            onChange={e => setPresupuesto(e.target.value)}
           />
         </div>
 
