@@ -4,7 +4,7 @@ import Mensaje from './Mensaje'
 const NuevoPresupuesto = ({
   presupuesto,
   setPresupuesto,
-  setIsValidPresupuesto
+  setIsValidPresupuesto,
 }) => {
   const [mensaje, setMensaje] = useState("");
 
@@ -15,6 +15,7 @@ const NuevoPresupuesto = ({
       setMensaje("No es un Presupuesto Válido");
       return;
     }
+
     setMensaje("");
     setIsValidPresupuesto = true;
   };
