@@ -5,6 +5,12 @@ import IconoNuevoGasto from './img/nuevo-gasto.svg'
 function App() {
   const [presupuesto, setPresupuesto] = useState(0)
   const [isValidPresupuesto, setIsValidPresupuesto] = useState(false)
+
+  const [modal, setModal] = useState(false)
+
+  const handleNuevoGasto = () => {
+    setModal(true)
+  };
   
   return (
     <div>
@@ -15,11 +21,17 @@ function App() {
         setIsValidPresupuesto={setIsValidPresupuesto}
       />
 
-      {isValidPresupuesto ? }
+      {isValidPresupuesto && (
         <div className="nuevo-gasto">
-          <img src={IconoNuevoGasto} alt="Icono Nuevo Gasto" />
+          <img
+            src={IconoNuevoGasto}
+            alt="Icono Nuevo Gasto"
+            onClick={handleNuevoGasto}
+          />
         </div>
-      }
+      )}
+
+      {modal && <p>Desde Modal</p>}
     </div>
   );
 }
