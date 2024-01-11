@@ -5,7 +5,7 @@ const ControlPresupuesto = ({
   setPresupuesto,
   setIsValidPresupuesto
 }) => {
-  const formatearCantidad = (cantidad) => {
+  const formatearCantidad = cantidad => {
     return cantidad.toLocaleString('en-US', {
       style: 'currency',
       currency: 'USD'
