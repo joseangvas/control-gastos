@@ -14,7 +14,7 @@ function App() {
         setIsValidPresupuesto={setIsValidPresupuesto}
       />
     </div>
-  );
+  )
 }
 
 export default App
