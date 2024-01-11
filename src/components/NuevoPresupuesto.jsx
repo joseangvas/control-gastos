@@ -11,9 +11,8 @@ const NuevoPresupuesto = ({
   const HandlePresupuesto = (e) => {
     e.preventDefault();
 
-    if (!presupuesto || presupuesto < 0) {
+    if (!presupuesto || presupuesto < 1) {
       setMensaje("No es un Presupuesto Válido");
-
       return;
     }
     setMensaje('');
