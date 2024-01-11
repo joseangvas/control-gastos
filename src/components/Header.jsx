@@ -1,6 +1,6 @@
-import React from 'react'
-import NuevoPresupuesto from './NuevoPresupuesto'
-import ControlPresupuesto from './ControlPresupuesto'
+import React from "react";
+import NuevoPresupuesto from "./NuevoPresupuesto";
+import ControlPresupuesto from "./ControlPresupuesto";
 
 const Header = ({
   presupuesto,
@@ -29,4 +29,4 @@ const Header = ({
   );
 };
 
-export default Header
+export default Header;
