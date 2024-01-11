@@ -8,7 +8,7 @@ const NuevoPresupuesto = ({
 }) => {
   const [mensaje, setMensaje] = useState("");
 
-  const HandlePresupuesto = (e) => {
+  function HandlePresupuesto(e) {
     e.preventDefault();
 
     if (!presupuesto || presupuesto < 0) {
@@ -17,8 +17,8 @@ const NuevoPresupuesto = ({
     }
 
     setMensaje("");
-    setIsValidPresupuesto = true;
-  };
+    setIsValidPresupuesto = true
+  }
 
   return (
     <div className="contenedor-presupuesto contenedor sombra">
