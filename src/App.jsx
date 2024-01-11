@@ -10,7 +10,7 @@ function App() {
       <Header
         presupuesto={presupuesto}
         setPresupuesto={setPresupuesto}
-        isValidPresupuesto={IsValidPresupuesto}
+        isValidPresupuesto={isValidPresupuesto}
         setIsValidPresupuesto={setIsValidPresupuesto}
       />
     </div>

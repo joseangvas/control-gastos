@@ -6,7 +6,7 @@ const Header = ({
   presupuesto,
   setPresupuesto,
   isValidPresupuesto,
-  setIsValidPresupuesto
+  setIsValidPresupuesto,
 }) => {
   return (
     <header>
@@ -25,7 +25,6 @@ const Header = ({
           setIsValidPresupuesto={setIsValidPresupuesto}
         />
       )}
-      
     </header>
   );
 };
