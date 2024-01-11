@@ -6,17 +6,17 @@ const NuevoPresupuesto = ({
   setPresupuesto,
   setIsValidPresupuesto
 }) => {
-  const [mensaje, setMensaje] = useState('')
+  const [mensaje, setMensaje] = useState("");
 
   const HandlePresupuesto = (e) => {
     e.preventDefault();
 
     if (!presupuesto || presupuesto < 0) {
-      setMensaje("No es un Presupuesto Válido")
-      return
+      setMensaje("No es un Presupuesto Válido");
+      return;
     }
-    setMensaje('')
-    setIsValidPresupuesto=(true)
+    setMensaje("");
+    setIsValidPresupuesto = true;
   };
 
   return (

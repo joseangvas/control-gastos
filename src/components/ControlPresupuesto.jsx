@@ -3,14 +3,14 @@ import {useState} from 'react'
 const ControlPresupuesto = ({
   presupuesto,
   setPresupuesto,
-  setIsValidPresupuesto
+  setIsValidPresupuesto,
 }) => {
-  const formatearCantidad = cantidad => {
-    return cantidad.toLocaleString('en-US', {
-      style: 'currency',
-      currency: 'USD'
-    })
-  }
+  const formatearCantidad = (cantidad) => {
+    return cantidad.toLocaleString("en-US", {
+      style: "currency",
+      currency: "USD",
+    });
+  };
 
   return (
     <div className="contenedor-presupuesto contenedor sombra dos-columnas">
@@ -25,6 +25,6 @@ const ControlPresupuesto = ({
       </div>
     </div>
   );
-}
+};
 
 export default ControlPresupuesto
