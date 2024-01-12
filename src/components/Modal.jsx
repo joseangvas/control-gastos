@@ -38,6 +38,8 @@ const Modal = ({ setModal, animarModal, setAnimarModal }) => {
           >
           <legend>Nuevo Gasto</legend>
 
+          {mensaje && <Mensaje tipo="error">{mensaje}</Mensaje>}
+
           <div className="campo">
             <label htmlfor="nombre">Descripción Gasto</label>
             <input
