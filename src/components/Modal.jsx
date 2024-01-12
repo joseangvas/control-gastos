@@ -21,6 +21,10 @@ const Modal = ({ setModal, animarModal, setAnimarModal }) => {
 
     if([nombre, cantidad, categoria].includes('')) {
       setMensaje('Todos los Campos son Obligatorios')
+
+      setTimeout(() => {
+        setMensaje('')
+      }, 3000);
       return
     }
   }
