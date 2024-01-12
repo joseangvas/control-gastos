@@ -10,6 +10,8 @@ function App() {
   const [modal, setModal] = useState(false)
   const [animarModal, setAnimarModal] = useState(false)
 
+  const [gastos, setGastos] = useState([])
+
   const handleNuevoGasto = () => {
     setModal(true)
 
