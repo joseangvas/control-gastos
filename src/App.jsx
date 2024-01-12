@@ -17,6 +17,10 @@ function App() {
       setAnimarModal(true);
     }, 500);
   };
+
+  const guardarGasto = gasto => {
+
+  }
   
   return (
     <div>
@@ -42,6 +46,7 @@ function App() {
           setModal={setModal}
           animarModal={animarModal}
           setAnimarModal={setAnimarModal}
+          guardarGasto={guardarGasto}
         />
       )}
     </div>
