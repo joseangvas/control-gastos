@@ -21,7 +21,10 @@ const Modal = ({ setModal, animarModal, setAnimarModal }) => {
       </div>
 
       <div>
-        <form className={`formulario ${animarModal ? "animar" : "cerrar"}`}>
+        <form 
+          onSubmit={handleSubmit}
+          className={`formulario ${animarModal ? "animar" : "cerrar"}`}
+          >
           <legend>Nuevo Gasto</legend>
 
           <div className="campo">
