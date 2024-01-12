@@ -19,7 +19,7 @@ const Modal = ({ setModal, animarModal, setAnimarModal }) => {
     e.preventDefault()
 
     if([nombre, cantidad, categoria].includes('')) {
-
+      setMensaje('Todos los Campos son Obligatorios')
       return
     }
   }
