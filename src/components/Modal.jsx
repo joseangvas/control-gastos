@@ -14,6 +14,14 @@ const Modal = ({ setModal, animarModal, setAnimarModal }) => {
     }, 500);
   }
 
+  const handleSubmit = e => {
+    e.preventDefault()
+
+    if([nombre, cantidad, categoria].includes('')) {
+
+    }
+  }
+
   return (
     <div className="modal">
       <div className="cerrar-modal">
