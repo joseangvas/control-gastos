@@ -41,7 +41,7 @@ const Modal = ({ setModal, animarModal, setAnimarModal }) => {
           {mensaje && <Mensaje tipo="error">{mensaje}</Mensaje>}
 
           <div className="campo">
-            <label htmlfor="nombre">Descripción Gasto</label>
+            <label htmlfor="nombre">Descripción del Gasto</label>
             <input
               id="nombre"
               type="text"
