@@ -2,6 +2,7 @@ import {useState} from 'react'
 import CerrarBtn from '../img/cerrar.svg'
 
 const Modal = ({ setModal, animarModal, setAnimarModal }) => {
+  
   const [nombre, setNombre] = useState('')
   const [cantidad, setCantidad] = useState('')
   const [categoria, setCategoria] = useState('')
@@ -19,6 +20,7 @@ const Modal = ({ setModal, animarModal, setAnimarModal }) => {
 
     if([nombre, cantidad, categoria].includes('')) {
 
+      return
     }
   }
 
