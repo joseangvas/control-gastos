@@ -22,6 +22,7 @@ function App() {
   };
 
   const guardarGasto = gasto => {
+    gasto.Id = generarId()
     setGastos([...gastos, gasto])
   }
   
