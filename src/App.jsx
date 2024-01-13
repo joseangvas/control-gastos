@@ -22,7 +22,7 @@ function App() {
   };
 
   const guardarGasto = gasto => {
-    gasto.Id = generarId()
+    gasto.id = generarId()
     setGastos([...gastos, gasto])
 
     // Cerrar Ventana Modal
