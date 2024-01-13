@@ -25,8 +25,8 @@ function App() {
     gasto.Id = generarId()
     setGastos([...gastos, gasto])
 
+    // Cerrar Ventana Modal
     setModal(true);
-
     setTimeout(() => {
       setAnimarModal(true);
     }, 500);
