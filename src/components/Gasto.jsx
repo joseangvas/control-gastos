@@ -6,7 +6,9 @@ const Gasto = () => {
       <div className="contenido-gasto">
 
         <div className="descripcion-gasto">
-          
+          <p className="categoria">
+            {gasto.categoria}
+          </p>
         </div>
       </div>
     </div>
