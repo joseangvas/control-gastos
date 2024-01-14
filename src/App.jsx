@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import Header from './components/Header'
+import ListadoGastos from './components/ListadoGastos'
 import Modal from './components/Modal'
 import {generarId} from './helpers'
 import IconoNuevoGasto from './img/nuevo-gasto.svg'
