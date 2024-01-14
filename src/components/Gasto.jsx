@@ -1,13 +1,15 @@
 import React from 'react'
 
 const Gasto = ({gasto}) => {
+  const {categoria} = gasto
+
   return (
     <div className="gasto sombra">
       <div className="contenido-gasto">
 
         <div className="descripcion-gasto">
           <p className="categoria">
-            {gasto.categoria}
+            {categoria}
           </p>
         </div>
       </div>
