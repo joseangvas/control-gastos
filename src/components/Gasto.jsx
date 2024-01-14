@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Gasto = () => {
+const Gasto = ({gasto}) => {
   return (
     <div className="gasto sombra">
       <div className="contenido-gasto">
