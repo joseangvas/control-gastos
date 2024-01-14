@@ -2,7 +2,9 @@ import React from 'react'
 
 const ListadoGastos = () => {
   return (
-    <div>ListadoGastos</div>
+    <div>
+      <p>Desde Listado de Gastos</p>
+    </div>
   )
 }
 
