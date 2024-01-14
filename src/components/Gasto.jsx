@@ -9,7 +9,7 @@ const Gasto = ({gasto}) => {
 
         <div className="descripcion-gasto">
           <p className="categoria">{categoria}</p>
-          <p classname="nombre-gasto">{nombre}</p>
+          <p className="nombre-gasto">{nombre}</p>
         </div>
       </div>
     </div>
