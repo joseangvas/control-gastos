@@ -45,7 +45,9 @@ function App() {
       {isValidPresupuesto && (
         <>
           <main>
-            <ListadoGastos />
+            <ListadoGastos 
+              gastos={gastos}
+            />
           </main>
           <div className="nuevo-gasto">
             <img
