@@ -6,6 +6,9 @@ const ControlPresupuesto = ({
   setPresupuesto,
   setIsValidPresupuesto,
 }) => {
+  const [disponible, setDisponible] = useState(0)
+  const [gastado, setGastado] = useState(0)
+
   useEffect(() => {
     
   }, [gastos])
