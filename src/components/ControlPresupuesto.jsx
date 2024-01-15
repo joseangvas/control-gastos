@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 const ControlPresupuesto = ({
   gastos,
@@ -6,6 +6,10 @@ const ControlPresupuesto = ({
   setPresupuesto,
   setIsValidPresupuesto,
 }) => {
+  useEffect(() => {
+  
+  }, [gastos])
+  
   const formatearCantidad = (cantidad) => {
     return cantidad.toLocaleString("en-US", {
       style: "currency",
