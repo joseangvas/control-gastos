@@ -1,19 +1,20 @@
 import React from 'react'
 import Gasto from './Gasto'
 
-const ListadoGastos = ({gastos}) => {
+const ListadoGastos = ({gastos, setGastoEditar}) => {
   return (
     <div className="listado-gastos contenedor">
-      <h2>{gastos.length ? 'Gastos' : 'No Hay Gastos aún'}</h2>
+      <h2>{gastos.length ? "Gastos" : "No Hay Gastos aún"}</h2>
 
-      {gastos.map( gasto => (
+      {gastos.map((gasto) => (
         <Gasto 
-          key={gasto.id}
-          gasto={gasto}
+          key={gasto.id} 
+          gasto={gasto} 
+          setGastoEditar={setGastoEditar} 
         />
       ))}
     </div>
-  )
+  );
 }
 
 export default ListadoGastos
