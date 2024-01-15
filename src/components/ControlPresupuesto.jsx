@@ -7,7 +7,7 @@ const ControlPresupuesto = ({
   setIsValidPresupuesto,
 }) => {
   useEffect(() => {
-  
+    
   }, [gastos])
   
   const formatearCantidad = (cantidad) => {
