@@ -10,7 +10,7 @@ const ControlPresupuesto = ({
   const [gastado, setGastado] = useState(0)
 
   useEffect(() => {
-    
+    const totalGastado = gastos.reduce((total, gasto) => gasto.cantidad + total)
   }, [gastos])
   
   const formatearCantidad = (cantidad) => {
