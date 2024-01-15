@@ -1,6 +1,7 @@
 import {useState} from 'react'
 
 const ControlPresupuesto = ({
+  gastos,
   presupuesto,
   setPresupuesto,
   setIsValidPresupuesto,
