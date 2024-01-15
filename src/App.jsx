@@ -44,7 +44,7 @@ function App() {
   }
   
   return (
-    <div className={modal ? 'fijar' : ''}>
+    <div className={modal ? "fijar" : ""}>
       <Header
         gastos={gastos}
         presupuesto={presupuesto}
@@ -56,10 +56,7 @@ function App() {
       {isValidPresupuesto && (
         <>
           <main>
-            <ListadoGastos 
-              gastos={gastos}
-              setGastoEditar={setGastoEditar}
-            />
+            <ListadoGastos gastos={gastos} setGastoEditar={setGastoEditar} />
           </main>
           <div className="nuevo-gasto">
             <img
@@ -77,6 +74,7 @@ function App() {
           animarModal={animarModal}
           setAnimarModal={setAnimarModal}
           guardarGasto={guardarGasto}
+          gastoEditar={gastoEditar}
         />
       )}
     </div>
