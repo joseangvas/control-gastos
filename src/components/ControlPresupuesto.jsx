@@ -34,12 +34,12 @@ const ControlPresupuesto = ({
 
         <p>
           <span>Disponible: </span>
-          {formatearCantidad(0)}
+          {formatearCantidad(disponible)}
         </p>
 
         <p>
           <span>Gastado: </span>
-          {formatearCantidad(0)}
+          {formatearCantidad(gastado)}
         </p>
       </div>
     </div>
