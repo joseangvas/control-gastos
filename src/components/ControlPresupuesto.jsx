@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react'
 const ControlPresupuesto = ({
   gastos,
   presupuesto,
+  setGastos,
   setPresupuesto,
   setIsValidPresupuesto,
 }) => {
