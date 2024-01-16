@@ -35,8 +35,8 @@ const Modal = ({
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if ([nombre, cantidad, categoria].includes("")) {
-      setMensaje("Todos los Campos son Obligatorios");
+    if ([nombre, cantidad, categoria].includes('')) {
+      setMensaje('Todos los Campos son Obligatorios');
 
       setTimeout(() => {
         setMensaje("");
