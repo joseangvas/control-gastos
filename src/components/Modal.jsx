@@ -19,7 +19,7 @@ const Modal = ({
     if (Object.keys(gastoEditar).length > 0) {
       setNombre(gastoEditar.nombre)
       setCantidad(gastoEditar.cantidad)
-      setCategoria(gastoEditar.categoria)
+      setCategoria(gastoEditar.categoria);
     }
   }, []);
 

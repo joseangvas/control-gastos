@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   LeadingActions,
   SwipeableList,
@@ -29,7 +29,7 @@ const diccionarioIconos = {
 };
 
 const Gasto = ({ gasto, setGastoEditar }) => {
-  const { categoria, nombre, cantidad, id, fecha } = gasto;
+  const {categoria, nombre, cantidad, id, fecha} = gasto
 
   const leadingActions = () => (
     <LeadingActions>
@@ -39,7 +39,7 @@ const Gasto = ({ gasto, setGastoEditar }) => {
     </LeadingActions>
   );
 
-  const TrailingActions = () => (
+  const trailingActions = () => (
     <TrailingActions>
       <SwipeAction onClick={() => console.log("Eliminar")}>
         Eliminar
