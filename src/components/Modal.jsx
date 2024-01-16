@@ -10,16 +10,16 @@ const Modal = ({
   gastoEditar,
   setGastoEditar,
 }) => {
-  const [mensaje, setMensaje] = useState("");
-  const [nombre, setNombre] = useState("");
-  const [cantidad, setCantidad] = useState("");
-  const [categoria, setCategoria] = useState("");
+  const [mensaje, setMensaje] = useState('')
+  const [nombre, setNombre] = useState('')
+  const [cantidad, setCantidad] = useState('')
+  const [categoria, setCategoria] = useState('')
 
   useEffect(() => {
     if (Object.keys(gastoEditar).length > 0) {
-      setNombre(gastoEditar.nombre);
-      setCantidad(gastoEditar.cantidad);
-      setCantidad(gastoEditar.categoria);
+      setNombre(gastoEditar.nombre)
+      setCantidad(gastoEditar.cantidad)
+      setCantidad(gastoEditar.categoria)
     }
   }, []);
 
@@ -32,19 +32,19 @@ const Modal = ({
     }, 500);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault()
 
     if ([nombre, cantidad, categoria].includes('')) {
-      setMensaje('Todos los Campos son Obligatorios');
+      setMensaje('Todos los Campos son Obligatorios')
 
       setTimeout(() => {
-        setMensaje("");
+        setMensaje('');
       }, 3000);
       return;
     }
 
-    guardarGasto({ nombre, cantidad, categoria });
+    guardarGasto({nombre, cantidad, categoria});
   };
 
   return (
