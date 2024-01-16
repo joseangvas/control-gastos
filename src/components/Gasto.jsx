@@ -25,7 +25,7 @@ const diccionarioIconos = {
   gastos: IconoGastos,
   ocio: IconoOcio,
   salud: IconoSalud,
-  suscripciones: IconoSuscripciones,
+  suscripciones: IconoSuscripciones
 };
 
 const Gasto = ({ gasto, setGastoEditar }) => {
