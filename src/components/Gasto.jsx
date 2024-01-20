@@ -69,7 +69,7 @@ const Gasto = ({gasto, setGastoEditar}) => {
         </div>
       </SwipeableListItem>
     </SwipeableList>
-  );
-};
+  )
+}
 
-export default Gasto;
+export default Gasto
