@@ -26,7 +26,7 @@ const diccionarioIconos = {
   ocio: IconoOcio,
   salud: IconoSalud,
   suscripciones: IconoSuscripciones
-};
+}
 
 const Gasto = ({gasto, setGastoEditar}) => {
   const {categoria, nombre, cantidad, id, fecha} = gasto
@@ -37,7 +37,7 @@ const Gasto = ({gasto, setGastoEditar}) => {
         Editar
       </SwipeAction>
     </LeadingActions>
-  );
+  )
 
   const trailingActions = () => (
     <TrailingActions>
@@ -45,7 +45,7 @@ const Gasto = ({gasto, setGastoEditar}) => {
         Eliminar
       </SwipeAction>
     </TrailingActions>
-  );
+  )
 
   return (
     <SwipeableList>
