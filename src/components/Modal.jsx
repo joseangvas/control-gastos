@@ -28,11 +28,11 @@ const Modal = ({
   }, [])
 
   const ocultarModal = () => {
-    setAnimarModal(false);
-    setGastoEditar({});
+    setAnimarModal(false)
+    setGastoEditar({})
 
     setTimeout(() => {
-      setModal(false);
+      setModal(false)
     }, 500);
   };
 
@@ -43,9 +43,9 @@ const Modal = ({
       setMensaje('Todos los Campos son Obligatorios')
 
       setTimeout(() => {
-        setMensaje('');
-      }, 3000);
-      return;
+        setMensaje('')
+      }, 3000)
+      return
     }
 
     guardarGasto({nombre, cantidad, categoria, id, fecha});
