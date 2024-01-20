@@ -42,10 +42,10 @@ function App() {
     setGastos([...gastos, gasto])
 
     // Cerrar Ventana Modal
-    setModal(false);
+    setModal(false)
     setTimeout(() => {
-      setAnimarModal(false);
-    }, 500);
+      setAnimarModal(false)
+    }, 500)
   }
   
   return (
