@@ -4,7 +4,7 @@ import {
   SwipeableList,
   SwipeableListItem,
   SwipeAction,
-  TrailingActions,
+  TrailingActions
 } from "react-swipeable-list";
 import "react-swipeable-list/dist/styles.css";
 
