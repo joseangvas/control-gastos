@@ -2,8 +2,8 @@ import {useState, useEffect} from 'react'
 
 const ControlPresupuesto = ({
   gastos,
-  presupuesto,
   setGastos,
+  presupuesto,
   setPresupuesto,
   setIsValidPresupuesto,
 }) => {
@@ -12,17 +12,17 @@ const ControlPresupuesto = ({
 
   useEffect(() => {
     const totalGastado = gastos.reduce((total, gasto) => gasto.cantidad + total, 0)
-    setGastado(totalGastado)
     const totalDisponible = presupuesto - totalGastado
-    setDisponible(totalDisponible);
+    setGastado(totalGastado)
+    setDisponible(totalDisponible)
   }, [gastos])
   
   const formatearCantidad = (cantidad) => {
     return cantidad.toLocaleString("en-US", {
       style: "currency",
       currency: "USD",
-    });
-  };
+    })
+  }
 
   return (
     <div className="contenedor-presupuesto contenedor sombra dos-columnas">
