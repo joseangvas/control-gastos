@@ -17,7 +17,11 @@ function App() {
 
   useEffect(() => {
     if(Object.keys(gastoEditar).length > 0) {
-      handleNuevoGasto()
+      setModal(true)
+      //handleNuevoGasto()
+      setTimeout(() => {
+        setAnimarModal(true)
+      }, 500)
     }
   }, [gastoEditar])
   
