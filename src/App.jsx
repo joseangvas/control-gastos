@@ -34,7 +34,7 @@ function App() {
     setTimeout(() => {
       setAnimarModal(true);
     }, 500);
-  };
+  }
 
   const guardarGasto = gasto => {
     gasto.id = generarId()
