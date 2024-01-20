@@ -14,18 +14,18 @@ const Modal = ({
   const [nombre, setNombre] = useState('')
   const [cantidad, setCantidad] = useState('')
   const [categoria, setCategoria] = useState('')
-  const [fecha, setFecha] = useState('');
-  const [id, setId] = useState('');
+  const [fecha, setFecha] = useState('')
+  const [id, setId] = useState('')
 
   useEffect(() => {
-    if (Object.keys(gastoEditar).length > 0) {
+    if(Object.keys(gastoEditar).length > 0) {
       setNombre(gastoEditar.nombre)
       setCantidad(gastoEditar.cantidad)
       setCategoria(gastoEditar.categoria)
-      setId(gastoEditar.id);
-      setFecha(gastoEditar.fecha);
+      setId(gastoEditar.id)
+      setFecha(gastoEditar.fecha)
     }
-  }, []);
+  }, [])
 
   const ocultarModal = () => {
     setAnimarModal(false);
@@ -39,7 +39,7 @@ const Modal = ({
   const handleSubmit = e => {
     e.preventDefault()
 
-    if ([nombre, cantidad, categoria].includes('')) {
+    if([nombre, cantidad, categoria].includes('')) {
       setMensaje('Todos los Campos son Obligatorios')
 
       setTimeout(() => {
