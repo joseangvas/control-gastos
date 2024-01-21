@@ -1,5 +1,5 @@
-import {useState} from "react";
-import Mensaje from "./Mensaje";
+import {useState} from "react"
+import Mensaje from "./Mensaje"
 
 const NuevoPresupuesto = ({
   presupuesto,
@@ -15,8 +15,8 @@ const NuevoPresupuesto = ({
       setMensaje("No es un presupuesto válido")
       return;
     }
-    setMensaje("");
-    setIsValidPresupuesto(true);
+    setMensaje("")
+    setIsValidPresupuesto(true)
   };
 
   return (
