@@ -40,6 +40,7 @@ function App() {
     if(gasto.id) {
       // Editar Gasto
       const gastosActualizados = gastos.map(gastoState => gastoState.id === gasto.id ? gasto : gastoState)
+      setGastos(gastosActualizados)
     } else {
       // Nuevo Gasto
       gasto.id = generarId()
