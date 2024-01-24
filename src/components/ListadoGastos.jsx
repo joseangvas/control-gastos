@@ -7,7 +7,12 @@ const ListadoGastos = ({ gastos, setGastoEditar, eliminarGasto }) => {
       <h2>{gastos.length ? "Gastos" : "No Hay Gastos aún"}</h2>
 
       {gastos.map((gasto) => (
-        <Gasto key={gasto.id} gasto={gasto} setGastoEditar={setGastoEditar} />
+        <Gasto
+          key={gasto.id}
+          gasto={gasto}
+          setGastoEditar={setGastoEditar}
+          eliminarGasto={eliminarGasto}
+        />
       ))}
     </div>
   );
