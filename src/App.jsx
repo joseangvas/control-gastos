@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     if(Object.keys(gastoEditar).length > 0) {
       setModal(true)
-
+4
       setTimeout(() => {
         setAnimarModal(true)
       }, 500)
