@@ -57,6 +57,7 @@ function App() {
 
   const eliminarGasto = id => {
     const gastosActualizados = gastos.filter(gasto => gasto.id !== id)
+    setGastos(gastosActualizados)
   }
   
   return (
