@@ -61,7 +61,7 @@ const Modal = ({
         onSubmit={handleSubmit}
         className={`formulario ${animarModal ? "animar" : "cerrar"}`}
       >
-        <legend>Nuevo Gasto</legend>
+        <legend>{gastoEditar.nombre ? "Editar Gasto" : "Nuevo Gasto"}</legend>
 
         {mensaje && <Mensaje tipo="error">{mensaje}</Mensaje>}
 
@@ -72,7 +72,7 @@ const Modal = ({
             type="text"
             placeholder="Ingrese Descripción del Gasto"
             value={nombre}
-            onChange={e => setNombre(e.target.value)}
+            onChange={(e) => setNombre(e.target.value)}
           />
         </div>
 
@@ -83,7 +83,7 @@ const Modal = ({
             type="number"
             placeholder="Ingrese Cantidad del Gasto"
             value={cantidad}
-            onChange={e => setCantidad(Number(e.target.value))}
+            onChange={(e) => setCantidad(Number(e.target.value))}
           />
         </div>
 
@@ -93,7 +93,7 @@ const Modal = ({
           <select
             id="categoria"
             value={categoria}
-            onChange={e => setCategoria(e.target.value)}
+            onChange={(e) => setCategoria(e.target.value)}
           >
             <option value="">-- Seleccione Categoria --</option>
             <option value="ahorro">Ahorro</option>
@@ -106,7 +106,10 @@ const Modal = ({
           </select>
         </div>
 
-        <input type="submit" value="Añadir Gasto" />
+        <input
+          type="submit"
+          value={gastoEditar.nombre ? "Guardar Cambios" : "Añadir Gasto"}
+        />
       </form>
     </div>
   );
