@@ -1,7 +1,6 @@
-/* eslint-disable react/prop-types */
-import { useState, useEffect } from "react";
-import Mensaje from "./Mensaje";
-import CerrarBtn from "../img/cerrar.svg";
+import { useState, useEffect } from "react"
+import Mensaje from "./Mensaje"
+import CerrarBtn from "../img/cerrar.svg"
 
 const Modal = ({
   setModal,
@@ -11,40 +10,40 @@ const Modal = ({
   gastoEditar,
   setGastoEditar,
 }) => {
-  const [mensaje, setMensaje] = useState("");
-  const [nombre, setNombre] = useState("");
-  const [cantidad, setCantidad] = useState("");
-  const [categoria, setCategoria] = useState("");
-  const [fecha, setFecha] = useState("");
-  const [id, setId] = useState("");
+  const [mensaje, setMensaje] = useState('')
+  const [nombre, setNombre] = useState('')
+  const [cantidad, setCantidad] = useState('')
+  const [categoria, setCategoria] = useState('')
+  const [fecha, setFecha] = useState('')
+  const [id, setId] = useState('')
 
   useEffect(() => {
     if (Object.keys(gastoEditar).length > 0) {
-      setNombre(gastoEditar.nombre);
-      setCantidad(gastoEditar.cantidad);
-      setCategoria(gastoEditar.categoria);
-      setId(gastoEditar.id);
-      setFecha(gastoEditar.fecha);
+      setNombre(gastoEditar.nombre)
+      setCantidad(gastoEditar.cantidad)
+      setCategoria(gastoEditar.categoria)
+      setId(gastoEditar.id)
+      setFecha(gastoEditar.fecha)
     }
-  }, []);
+  }, [])
 
   const ocultarModal = () => {
-    setAnimarModal(false);
-    setGastoEditar({});
+    setAnimarModal(false)
+    setGastoEditar({})
 
     setTimeout(() => {
-      setModal(false);
+      setModal(false)
     }, 500);
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    if ([nombre, cantidad, categoria].includes("")) {
-      setMensaje("Todos los Campos son Obligatorios");
+    if([nombre, cantidad, categoria].includes('')) {
+      setMensaje("Todos los Campos son Obligatorios")
 
       setTimeout(() => {
-        setMensaje("");
+        setMensaje("")
       }, 3000);
       return;
     }
@@ -116,4 +115,4 @@ const Modal = ({
   );
 };
 
-export default Modal;
+export default Modal

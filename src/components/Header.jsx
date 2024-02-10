@@ -4,6 +4,7 @@ import ControlPresupuesto from "./ControlPresupuesto";
 
 const Header = ({
   gastos,
+  setGastos,
   presupuesto,
   setPresupuesto,
   isValidPresupuesto,
