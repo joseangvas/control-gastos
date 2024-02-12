@@ -14,7 +14,7 @@ const ListadoGastos = ({
       {
         filtro ? (
           <>
-            <h2>{gastos.length ? "Gastos" : "No Hay Gastos aún"}</h2>
+            <h2>{gastosFiltrados.length ? "Gastos" : "No Hay Gastos aún"}</h2>
             {gastosFiltrados.map((gasto) => (
               <Gasto
                 key={gasto.id}
@@ -25,14 +25,16 @@ const ListadoGastos = ({
             ))}
           </>
         ) : (
-          gastos.map((gasto) => (
-            <Gasto
-              key={gasto.id}
-              gasto={gasto}
-              setGastoEditar={setGastoEditar}
-              eliminarGasto={eliminarGasto}
-            />
-          ))
+          <>
+            {gastos.map((gasto) => (
+              <Gasto
+                key={gasto.id}
+                gasto={gasto}
+                setGastoEditar={setGastoEditar}
+                eliminarGasto={eliminarGasto}
+              />
+            ))}
+          </>
         )
       }
     </div>
