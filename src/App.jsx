@@ -42,7 +42,16 @@ function App() {
   // Guardar Gastos en LocalStorage (Cuando cambia Gastos) en Formato JSON
   useEffect(() => {
     localStorage.setItem('gastos', JSON.stringify(gastos) ?? [])
-  }, [gastos])  
+  }, [gastos])
+
+
+  useEffect(() => {
+    if(filtro) {
+      // Filtrar Gastos por Categoria
+      const gastosFiltrados = gastos.filter(gasto => gasto.categoria === filtro)
+      setGastos(gastosFiltrados)
+    }
+  }, [filtro])
 
 
   // Guardar Presupuesto en LocalStorage (Se ejecuta solo una vez al cargar Aplicacion)
