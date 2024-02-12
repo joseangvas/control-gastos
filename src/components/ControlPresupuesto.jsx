@@ -9,12 +9,17 @@ const ControlPresupuesto = ({
   setPresupuesto,
   setIsValidPresupuesto,
 }) => {
+  const [porcentaje, setPorcentaje] = useState(0)
   const [disponible, setDisponible] = useState(0)
   const [gastado, setGastado] = useState(0)
 
   useEffect(() => {
     const totalGastado = gastos.reduce((total, gasto) => gasto.cantidad + total, 0)
     const totalDisponible = presupuesto - totalGastado
+
+    // Calcular el Porcentaje Gastado
+    const nuevoPorcentaje = (((presupuesto - totalDisponible) / presupuesto) * 100).toFixed(2)
+
     setGastado(totalGastado)
     setDisponible(totalDisponible)
   }, [gastos])
@@ -30,7 +35,7 @@ const ControlPresupuesto = ({
     <div className="contenedor-presupuesto contenedor sombra dos-columnas">
       <div>
         <CircularProgressbar
-          value={40}
+          value={porcentaje}
         />
       </div>
 
