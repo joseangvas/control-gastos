@@ -50,7 +50,7 @@ function App() {
     if(filtro) {
       // Filtrar Gastos por Categoria
       const gastosFiltrados = gastos.filter(gasto => gasto.categoria === filtro)
-      setGastos(gastosFiltrados)
+      setGastosFiltrados(gastosFiltrados)
     }
   }, [filtro])
 
