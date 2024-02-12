@@ -6,8 +6,14 @@ import {generarId} from './helpers'
 import IconoNuevoGasto from './img/nuevo-gasto.svg'
 
 function App() {
-  const [gastos, setGastos] = useState([])
-  const [presupuesto, setPresupuesto] = useState(0)
+  // Si existen Gastos lo transforma en un Arreglo con JSON.parse, sino lo inicializa como un Arreglo Vacío.
+  const [gastos, setGastos] = useState(
+    localStorage.getItem('gastos')  ? JSON.parse(localStorage.getItem('gastos')) : []
+  )
+
+  const [presupuesto, setPresupuesto] = useState(
+    Number(localStorage.getItem('presupuesto')) ?? 0
+  )
   const [isValidPresupuesto, setIsValidPresupuesto] = useState(false)
 
   const [modal, setModal] = useState(false)
@@ -24,7 +30,26 @@ function App() {
       }, 500)
     }
   }, [gastoEditar])
-  
+
+  // Iniciar Presupuesto en LocalStorage (Cuando cambia presupuesto)
+  useEffect(() => {
+    localStorage.setItem('presupuesto', presupuesto ?? 0)
+  }, [presupuesto])
+
+  // Guardar Gastos en LocalStorage (Cuando cambia Gastos) en Formato JSON
+  useEffect(() => {
+    localStorage.setItem('gastos', JSON.stringify(gastos) ?? [])
+  }, [gastos])  
+
+
+  // Guardar Presupuesto en LocalStorage (Se ejecuta solo una vez al cargar Aplicacion)
+  useEffect(() => {
+    const presupuestoLS = Number(localStorage.getItem('presupuesto')) ?? 0
+
+    if(presupuestoLS > 0) {
+      setIsValidPresupuesto(true)
+    }
+  }, [])
 
 
   const handleNuevoGasto = () => {
